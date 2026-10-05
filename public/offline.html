@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline — FocusSpace</title>
+  <style>
+    body {
+      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: #fef6e4; color: #5c3317; font-family: 'Nunito', 'Segoe UI', sans-serif; text-align: center; padding: 20px;
+    }
+    .card {
+      background: #fffbf2; border: 3px solid #2d1a0e; border-radius: 28px;
+      box-shadow: 8px 8px 0 #2d1a0e; padding: 40px 32px; max-width: 380px;
+    }
+    h1 { font-size: 24px; margin: 16px 0 8px; }
+    p { font-size: 14px; font-weight: 600; color: #8b5e3c; margin: 0 0 20px; }
+    .icon { color: #f4845f; animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    button {
+      background: #f4845f; color: #fff; border: 2.5px solid #2d1a0e; border-radius: 14px;
+      padding: 10px 24px; font-weight: 700; font-size: 14px; cursor: pointer; box-shadow: 4px 4px 0 #2d1a0e;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    button:hover { transform: translate(-1px,-1px); box-shadow: 5px 5px 0 #2d1a0e; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <svg class="icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"/>
+    </svg>
+    <h1>Yah, koneksi kopi putus…</h1>
+    <p>Kamu sedang offline. Cek internetmu lalu coba lagi — sesi fokusmu tetap aman!</p>
+    <button onclick="location.reload()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+      Coba Lagi
+    </button>
+  </div>
+</body>
+</html>

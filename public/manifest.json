@@ -1,0 +1,24 @@
+{
+  "name": "FocusSpace — Ruang Belajar Virtual",
+  "short_name": "FocusSpace",
+  "description": "Fokus, musik, belajar bareng, kuis interaktif, dan mini-games dalam satu kafe virtual yang cozy.",
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fef6e4",
+  "theme_color": "#f4845f",
+  "orientation": "portrait-primary",
+  "lang": "id",
+  "categories": ["productivity", "education", "lifestyle"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Timer Fokus", "short_name": "Fokus", "url": "/", "description": "Mulai sesi pomodoro" },
+    { "name": "Musik Cozy", "short_name": "Musik", "url": "/music", "description": "Radio lofi & Spotify" },
+    { "name": "Kuis Bareng", "short_name": "Kuis", "url": "/quiz", "description": "Buat & mainkan kuis" },
+    { "name": "Mini Games", "short_name": "Games", "url": "/games", "description": "Wordle, Minesweeper, 2048" }
+  ]
+}
